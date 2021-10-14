@@ -27,6 +27,10 @@
 		7F634C7627186649001F0337 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F634C7527186649001F0337 /* GoogleService-Info.plist */; };
 		7F634C7827186D3C001F0337 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C7727186D3C001F0337 /* User.swift */; };
 		7F634C7A27186D45001F0337 /* BlogPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C7927186D45001F0337 /* BlogPost.swift */; };
+		7FEB910E27189CAA004A1328 /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB910D27189CAA004A1328 /* PayWallViewController.swift */; };
+		7FEB91112718A8FD004A1328 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB91102718A8FD004A1328 /* PayWallHeaderView.swift */; };
+		7FEB91132718AA06004A1328 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB91122718AA06004A1328 /* Extensions.swift */; };
+		7FEB91152718CD9E004A1328 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB91142718CD9E004A1328 /* PayWallDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +57,11 @@
 		7F634C7527186649001F0337 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F634C7727186D3C001F0337 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7F634C7927186D45001F0337 /* BlogPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPost.swift; sourceTree = "<group>"; };
+		7FEB910D27189CAA004A1328 /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		7FEB910F2718A57B004A1328 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		7FEB91102718A8FD004A1328 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		7FEB91122718AA06004A1328 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7FEB91142718CD9E004A1328 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		FB23A089FF20D6A23202FA71 /* Pods-ThoughtsBlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsBlogApp.release.xcconfig"; path = "Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +112,7 @@
 		7F634C552718320B001F0337 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7FEB910C27189C84004A1328 /* Other */,
 				7F634C7327183839001F0337 /* Auth */,
 				7F634C722718380F001F0337 /* Core Tabs */,
 				7F634C7427183871001F0337 /* Posts */,
@@ -123,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				7F634C4C271831E5001F0337 /* LaunchScreen.storyboard */,
+				7FEB91102718A8FD004A1328 /* PayWallHeaderView.swift */,
+				7FEB91142718CD9E004A1328 /* PayWallDescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +146,8 @@
 				7F634C4A271831E5001F0337 /* Assets.xcassets */,
 				7F634C43271831E1001F0337 /* SceneDelegate.swift */,
 				7F634C7527186649001F0337 /* GoogleService-Info.plist */,
+				7FEB910F2718A57B004A1328 /* Configuration.storekit */,
+				7FEB91122718AA06004A1328 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -184,6 +198,14 @@
 				7F634C65271834BC001F0337 /* ViewPostViewController.swift */,
 			);
 			path = Posts;
+			sourceTree = "<group>";
+		};
+		7FEB910C27189C84004A1328 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				7FEB910D27189CAA004A1328 /* PayWallViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		D11ED9940615ABFA9F644420 /* Pods */ = {
@@ -310,10 +332,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F634C7A27186D45001F0337 /* BlogPost.swift in Sources */,
+				7FEB91152718CD9E004A1328 /* PayWallDescriptionView.swift in Sources */,
+				7FEB91132718AA06004A1328 /* Extensions.swift in Sources */,
 				7F634C46271831E1001F0337 /* HomeViewController.swift in Sources */,
 				7F634C6F27183571001F0337 /* AuthManager.swift in Sources */,
 				7F634C6D27183559001F0337 /* DatabaseManager.swift in Sources */,
 				7F634C6427183496001F0337 /* SignUpViewController.swift in Sources */,
+				7FEB91112718A8FD004A1328 /* PayWallHeaderView.swift in Sources */,
 				7F634C42271831E1001F0337 /* AppDelegate.swift in Sources */,
 				7F634C622718348B001F0337 /* SignInViewController.swift in Sources */,
 				7F634C7827186D3C001F0337 /* User.swift in Sources */,
@@ -324,6 +349,7 @@
 				7F634C66271834BC001F0337 /* ViewPostViewController.swift in Sources */,
 				7F634C6B27183537001F0337 /* InAppPurchaseManager.swift in Sources */,
 				7F634C712718358F001F0337 /* StorageManager.swift in Sources */,
+				7FEB910E27189CAA004A1328 /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

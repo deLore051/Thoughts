@@ -1,0 +1,49 @@
+{
+  "identifier" : "FAC83BED",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "185C73CA",
+      "localizations" : [
+
+      ],
+      "name" : "Premium",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "0FA00CB7",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Unlock all Thoughts posted",
+              "displayName" : "Premium Montly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.temporary.id",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Premium Montly",
+          "subscriptionGroupID" : "185C73CA",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

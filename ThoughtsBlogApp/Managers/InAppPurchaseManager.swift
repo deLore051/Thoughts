@@ -12,8 +12,8 @@ final class InAppPurchaseManager {
     
     private init() { }
     
-    func isPremium() {
-        
+    func isPremium() -> Bool {
+        return false
     }
     
     func subscribe() {
