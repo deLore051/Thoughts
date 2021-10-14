@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,10 +14,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         let window = UIWindow(frame: UIScreen.main.bounds)
-        
-        // TODO: Update vc to signinVC if user is not signed in
-        window.rootViewController = TabBarViewController()
+        var navVC: UINavigationController
+        if AuthManager.shared.isSignedIn {
+            navVC = UINavigationController(rootViewController: TabBarViewController())
+        } else {
+            let vc = SignInViewController()
+            vc.navigationItem.largeTitleDisplayMode = .always
+            navVC = UINavigationController(rootViewController: vc)
+            navVC.navigationBar.prefersLargeTitles = true
+        }
+        window.rootViewController = navVC
         window.makeKeyAndVisible()
         self.window = window
         return true
