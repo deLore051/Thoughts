@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18E7468EEEC2F58B3E74AC1B /* Pods_ThoughtsBlogApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6652478D53AAB785EF359894 /* Pods_ThoughtsBlogApp.framework */; };
 		7F634C42271831E1001F0337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C41271831E1001F0337 /* AppDelegate.swift */; };
 		7F634C44271831E1001F0337 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C43271831E1001F0337 /* SceneDelegate.swift */; };
-		7F634C46271831E1001F0337 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C45271831E1001F0337 /* ViewController.swift */; };
-		7F634C49271831E1001F0337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F634C47271831E1001F0337 /* Main.storyboard */; };
+		7F634C46271831E1001F0337 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C45271831E1001F0337 /* HomeViewController.swift */; };
 		7F634C4B271831E5001F0337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F634C4A271831E5001F0337 /* Assets.xcassets */; };
 		7F634C4E271831E5001F0337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F634C4C271831E5001F0337 /* LaunchScreen.storyboard */; };
+		7F634C5B271832EF001F0337 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F634C5A271832EF001F0337 /* StoreKit.framework */; };
+		7F634C5D27183426001F0337 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C5C27183426001F0337 /* ProfileViewController.swift */; };
+		7F634C602718346E001F0337 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C5F2718346E001F0337 /* TabBarViewController.swift */; };
+		7F634C622718348B001F0337 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C612718348B001F0337 /* SignInViewController.swift */; };
+		7F634C6427183496001F0337 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C6327183496001F0337 /* SignUpViewController.swift */; };
+		7F634C66271834BC001F0337 /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C65271834BC001F0337 /* ViewPostViewController.swift */; };
+		7F634C68271834C7001F0337 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C67271834C7001F0337 /* CreateNewPostViewController.swift */; };
+		7F634C6B27183537001F0337 /* InAppPurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C6A27183537001F0337 /* InAppPurchaseManager.swift */; };
+		7F634C6D27183559001F0337 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C6C27183559001F0337 /* DatabaseManager.swift */; };
+		7F634C6F27183571001F0337 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C6E27183571001F0337 /* AuthManager.swift */; };
+		7F634C712718358F001F0337 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F634C702718358F001F0337 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A209AF6E30B02CFF7307AC9 /* Pods-ThoughtsBlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsBlogApp.debug.xcconfig"; path = "Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6652478D53AAB785EF359894 /* Pods_ThoughtsBlogApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtsBlogApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F634C3E271831E1001F0337 /* ThoughtsBlogApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtsBlogApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F634C41271831E1001F0337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F634C43271831E1001F0337 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F634C45271831E1001F0337 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7F634C48271831E1001F0337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F634C45271831E1001F0337 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7F634C4A271831E5001F0337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F634C4D271831E5001F0337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F634C4F271831E5001F0337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F634C5A271832EF001F0337 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7F634C5C27183426001F0337 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7F634C5F2718346E001F0337 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7F634C612718348B001F0337 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7F634C6327183496001F0337 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7F634C65271834BC001F0337 /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
+		7F634C67271834C7001F0337 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		7F634C6A27183537001F0337 /* InAppPurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppPurchaseManager.swift; sourceTree = "<group>"; };
+		7F634C6C27183559001F0337 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		7F634C6E27183571001F0337 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		7F634C702718358F001F0337 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		FB23A089FF20D6A23202FA71 /* Pods-ThoughtsBlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsBlogApp.release.xcconfig"; path = "Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F634C5B271832EF001F0337 /* StoreKit.framework in Frameworks */,
+				18E7468EEEC2F58B3E74AC1B /* Pods_ThoughtsBlogApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +68,8 @@
 			children = (
 				7F634C40271831E1001F0337 /* ThoughtsBlogApp */,
 				7F634C3F271831E1001F0337 /* Products */,
+				7F634C59271832EF001F0337 /* Frameworks */,
+				D11ED9940615ABFA9F644420 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,107 @@
 		7F634C40271831E1001F0337 /* ThoughtsBlogApp */ = {
 			isa = PBXGroup;
 			children = (
-				7F634C41271831E1001F0337 /* AppDelegate.swift */,
-				7F634C43271831E1001F0337 /* SceneDelegate.swift */,
-				7F634C45271831E1001F0337 /* ViewController.swift */,
-				7F634C47271831E1001F0337 /* Main.storyboard */,
-				7F634C4A271831E5001F0337 /* Assets.xcassets */,
-				7F634C4C271831E5001F0337 /* LaunchScreen.storyboard */,
+				7F634C69271834E5001F0337 /* Managers */,
+				7F634C5827183224001F0337 /* Resources */,
+				7F634C5627183213001F0337 /* Model */,
+				7F634C5727183219001F0337 /* Views */,
+				7F634C552718320B001F0337 /* Controller */,
 				7F634C4F271831E5001F0337 /* Info.plist */,
 			);
 			path = ThoughtsBlogApp;
+			sourceTree = "<group>";
+		};
+		7F634C552718320B001F0337 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C7327183839001F0337 /* Auth */,
+				7F634C722718380F001F0337 /* Core Tabs */,
+				7F634C7427183871001F0337 /* Posts */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7F634C5627183213001F0337 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7F634C5727183219001F0337 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C4C271831E5001F0337 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F634C5827183224001F0337 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C41271831E1001F0337 /* AppDelegate.swift */,
+				7F634C4A271831E5001F0337 /* Assets.xcassets */,
+				7F634C43271831E1001F0337 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7F634C59271832EF001F0337 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C5A271832EF001F0337 /* StoreKit.framework */,
+				6652478D53AAB785EF359894 /* Pods_ThoughtsBlogApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F634C69271834E5001F0337 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C6A27183537001F0337 /* InAppPurchaseManager.swift */,
+				7F634C6C27183559001F0337 /* DatabaseManager.swift */,
+				7F634C6E27183571001F0337 /* AuthManager.swift */,
+				7F634C702718358F001F0337 /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		7F634C722718380F001F0337 /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C45271831E1001F0337 /* HomeViewController.swift */,
+				7F634C5C27183426001F0337 /* ProfileViewController.swift */,
+				7F634C5F2718346E001F0337 /* TabBarViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		7F634C7327183839001F0337 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C612718348B001F0337 /* SignInViewController.swift */,
+				7F634C6327183496001F0337 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7F634C7427183871001F0337 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				7F634C67271834C7001F0337 /* CreateNewPostViewController.swift */,
+				7F634C65271834BC001F0337 /* ViewPostViewController.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		D11ED9940615ABFA9F644420 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A209AF6E30B02CFF7307AC9 /* Pods-ThoughtsBlogApp.debug.xcconfig */,
+				FB23A089FF20D6A23202FA71 /* Pods-ThoughtsBlogApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F634C52271831E5001F0337 /* Build configuration list for PBXNativeTarget "ThoughtsBlogApp" */;
 			buildPhases = (
+				67D45E33D7FD4EA698E0D9EA /* [CP] Check Pods Manifest.lock */,
 				7F634C3A271831E1001F0337 /* Sources */,
 				7F634C3B271831E1001F0337 /* Frameworks */,
 				7F634C3C271831E1001F0337 /* Resources */,
+				534F56070365F2B2F2EEA949 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +248,77 @@
 			files = (
 				7F634C4E271831E5001F0337 /* LaunchScreen.storyboard in Resources */,
 				7F634C4B271831E5001F0337 /* Assets.xcassets in Resources */,
-				7F634C49271831E1001F0337 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		534F56070365F2B2F2EEA949 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67D45E33D7FD4EA698E0D9EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThoughtsBlogApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F634C3A271831E1001F0337 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F634C46271831E1001F0337 /* ViewController.swift in Sources */,
+				7F634C46271831E1001F0337 /* HomeViewController.swift in Sources */,
+				7F634C6F27183571001F0337 /* AuthManager.swift in Sources */,
+				7F634C6D27183559001F0337 /* DatabaseManager.swift in Sources */,
+				7F634C6427183496001F0337 /* SignUpViewController.swift in Sources */,
 				7F634C42271831E1001F0337 /* AppDelegate.swift in Sources */,
+				7F634C622718348B001F0337 /* SignInViewController.swift in Sources */,
+				7F634C5D27183426001F0337 /* ProfileViewController.swift in Sources */,
+				7F634C68271834C7001F0337 /* CreateNewPostViewController.swift in Sources */,
+				7F634C602718346E001F0337 /* TabBarViewController.swift in Sources */,
 				7F634C44271831E1001F0337 /* SceneDelegate.swift in Sources */,
+				7F634C66271834BC001F0337 /* ViewPostViewController.swift in Sources */,
+				7F634C6B27183537001F0337 /* InAppPurchaseManager.swift in Sources */,
+				7F634C712718358F001F0337 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7F634C47271831E1001F0337 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7F634C48271831E1001F0337 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7F634C4C271831E5001F0337 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,11 +448,13 @@
 		};
 		7F634C53271831E5001F0337 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A209AF6E30B02CFF7307AC9 /* Pods-ThoughtsBlogApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ThoughtsBlogApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,17 +462,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefandojcinovic.ThoughtsBlogApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7F634C54271831E5001F0337 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB23A089FF20D6A23202FA71 /* Pods-ThoughtsBlogApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ThoughtsBlogApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.stefandojcinovic.ThoughtsBlogApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
