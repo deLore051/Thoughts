@@ -31,6 +31,8 @@
 		7FEB91112718A8FD004A1328 /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB91102718A8FD004A1328 /* PayWallHeaderView.swift */; };
 		7FEB91132718AA06004A1328 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB91122718AA06004A1328 /* Extensions.swift */; };
 		7FEB91152718CD9E004A1328 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB91142718CD9E004A1328 /* PayWallDescriptionView.swift */; };
+		7FEB91172719F89D004A1328 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = 7FEB91162719F89D004A1328 /* StoreKitTestCertificate.cer */; };
+		7FEB9119271B5982004A1328 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEB9118271B5982004A1328 /* SignInHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		7FEB91102718A8FD004A1328 /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
 		7FEB91122718AA06004A1328 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		7FEB91142718CD9E004A1328 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
+		7FEB91162719F89D004A1328 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		7FEB9118271B5982004A1328 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
 		FB23A089FF20D6A23202FA71 /* Pods-ThoughtsBlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsBlogApp.release.xcconfig"; path = "Target Support Files/Pods-ThoughtsBlogApp/Pods-ThoughtsBlogApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +139,7 @@
 				7F634C4C271831E5001F0337 /* LaunchScreen.storyboard */,
 				7FEB91102718A8FD004A1328 /* PayWallHeaderView.swift */,
 				7FEB91142718CD9E004A1328 /* PayWallDescriptionView.swift */,
+				7FEB9118271B5982004A1328 /* SignInHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				7F634C43271831E1001F0337 /* SceneDelegate.swift */,
 				7F634C7527186649001F0337 /* GoogleService-Info.plist */,
 				7FEB910F2718A57B004A1328 /* Configuration.storekit */,
+				7FEB91162719F89D004A1328 /* StoreKitTestCertificate.cer */,
 				7FEB91122718AA06004A1328 /* Extensions.swift */,
 			);
 			path = Resources;
@@ -279,6 +285,7 @@
 				7F634C4E271831E5001F0337 /* LaunchScreen.storyboard in Resources */,
 				7F634C4B271831E5001F0337 /* Assets.xcassets in Resources */,
 				7F634C7627186649001F0337 /* GoogleService-Info.plist in Resources */,
+				7FEB91172719F89D004A1328 /* StoreKitTestCertificate.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +347,7 @@
 				7F634C6427183496001F0337 /* SignUpViewController.swift in Sources */,
 				7FEB91112718A8FD004A1328 /* PayWallHeaderView.swift in Sources */,
 				7F634C42271831E1001F0337 /* AppDelegate.swift in Sources */,
+				7FEB9119271B5982004A1328 /* SignInHeaderView.swift in Sources */,
 				7F634C622718348B001F0337 /* SignInViewController.swift in Sources */,
 				7F634C7827186D3C001F0337 /* User.swift in Sources */,
 				7F634C5D27183426001F0337 /* ProfileViewController.swift in Sources */,

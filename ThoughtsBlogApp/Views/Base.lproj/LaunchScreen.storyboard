@@ -17,13 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="toughts_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bgt-bc-Pdb">
-                                <rect key="frame" x="82" y="294" width="250" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="JpS-PE-qAF"/>
-                                    <constraint firstAttribute="width" constant="250" id="gYF-Kt-COf"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THOUGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ups-B7-yi5">
                                 <rect key="frame" x="20" y="494" width="374" height="50"/>
                                 <constraints>
@@ -33,15 +26,22 @@
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vBa-nG-EMq">
+                                <rect key="frame" x="82" y="294" width="250" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qTT-uj-6Z7"/>
+                                    <constraint firstAttribute="width" constant="250" id="spV-6O-NW8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ups-B7-yi5" secondAttribute="trailing" constant="20" id="G6G-y9-6e9"/>
-                            <constraint firstItem="Bgt-bc-Pdb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="MDN-La-1bo"/>
-                            <constraint firstItem="Bgt-bc-Pdb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="UwC-HC-ZZO"/>
-                            <constraint firstItem="Ups-B7-yi5" firstAttribute="top" secondItem="Bgt-bc-Pdb" secondAttribute="bottom" id="cTx-Su-NdU"/>
+                            <constraint firstItem="vBa-nG-EMq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="QA3-h5-huQ"/>
+                            <constraint firstItem="Ups-B7-yi5" firstAttribute="top" secondItem="vBa-nG-EMq" secondAttribute="bottom" id="Xs7-pk-7BC"/>
                             <constraint firstItem="Ups-B7-yi5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jRd-us-iis"/>
+                            <constraint firstItem="vBa-nG-EMq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sik-8P-GHL"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -51,7 +51,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="toughts_logo" width="1024" height="1024"/>
+        <image name="logo" width="1024" height="1024"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

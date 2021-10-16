@@ -33,7 +33,7 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.temporary.id",
+          "productID" : "com.temporary.thoughts",
           "recurringSubscriptionPeriod" : "P1M",
           "referenceName" : "Premium Montly",
           "subscriptionGroupID" : "185C73CA",

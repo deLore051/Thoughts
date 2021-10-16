@@ -7,27 +7,15 @@
 
 import UIKit
 import Firebase
+import Purchases
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        var navVC: UINavigationController
-        if AuthManager.shared.isSignedIn {
-            navVC = UINavigationController(rootViewController: TabBarViewController())
-        } else {
-            let vc = SignInViewController()
-            vc.navigationItem.largeTitleDisplayMode = .always
-            navVC = UINavigationController(rootViewController: vc)
-            navVC.navigationBar.prefersLargeTitles = true
-        }
-        window.rootViewController = navVC
-        window.makeKeyAndVisible()
-        self.window = window
+        Purchases.configure(withAPIKey: "nVykeWSuXZuaayHkLYUmWguyKNEvGoDP")
+        InAppPurchaseManager.shared.getSubscriptionStatus(completion: nil)
         return true
     }
 
