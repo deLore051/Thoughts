@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,6 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         var navVC: UINavigationController
         if AuthManager.shared.isSignedIn {
+            guard let email = Auth.auth().currentUser?.email else {
+                print("Error in scene delegate")
+                return
+            }
+            UserDefaults.standard.setValue(email, forKey: "email")
             let vc = TabBarViewController()
             vc.modalPresentationStyle = .fullScreen
             window.rootViewController = vc

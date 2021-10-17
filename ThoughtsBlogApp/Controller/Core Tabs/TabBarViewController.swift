@@ -15,12 +15,15 @@ class TabBarViewController: UITabBarController {
     }
     
     private func setUpControllers() {
-        
+        guard let currentEmail = UserDefaults.standard.string(forKey: "email") else {
+            print("Error in tabBarVC")
+            return
+        }
         let homeVC = HomeViewController()
         homeVC.title = "Home"
         homeVC.navigationItem.largeTitleDisplayMode = .always
         
-        let profileVC = ProfileViewController()
+        let profileVC = ProfileViewController(currentEmail: currentEmail)
         profileVC.title = "Profile"
         profileVC.navigationItem.largeTitleDisplayMode = .always
         
@@ -34,4 +37,5 @@ class TabBarViewController: UITabBarController {
         
         setViewControllers([navVC1, navVC2], animated: true)
     }
+    
 }
