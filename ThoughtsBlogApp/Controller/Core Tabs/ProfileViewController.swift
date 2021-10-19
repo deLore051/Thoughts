@@ -11,7 +11,8 @@ class ProfileViewController: UIViewController {
 
     private let tableView: UITableView = {
         let tableView = UITableView()
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(PostPreviewTableViewCell.self,
+                           forCellReuseIdentifier: PostPreviewTableViewCell.identifier)
         return tableView
     }()
     
@@ -209,16 +210,26 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = post.title
+        guard let cell = tableView
+                .dequeueReusableCell(
+                    withIdentifier: PostPreviewTableViewCell.identifier,
+                    for: indexPath) as? PostPreviewTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.configureCell(with: .init(title: post.title, imageURL: post.headerImageURL))
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = ViewPostViewController()
-        vc.title = posts[indexPath.row].title
+        let vc = ViewPostViewController(post: posts[indexPath.row])
+        vc.navigationItem.largeTitleDisplayMode = .never
+        vc.title = "Post"
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
 }
