@@ -33,6 +33,7 @@ class ProfileViewController: UIViewController {
         view.backgroundColor = .systemBackground
         title = "Profile"
         fetchProfileData()
+        fetchPosts()
         setUpSignOutButton()
         setUpTable()
     }
@@ -162,7 +163,13 @@ class ProfileViewController: UIViewController {
     }
     
     private func fetchPosts() {
-        
+        DatabaseManager.shared.getPostsForUser(email: currentEmail) { [weak self] posts in
+            guard let self = self else { return }
+            self.posts = posts
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
 
     /// Sign out
@@ -203,7 +210,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let post = posts[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "Blog post goes here"
+        cell.textLabel?.text = post.title
         return cell
     }
     

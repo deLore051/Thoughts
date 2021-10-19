@@ -16,12 +16,8 @@ final class StorageManager {
     private init() {}
 
     public func uploadUserProfilePicture(email: String, image: UIImage?, completion: @escaping (Bool) -> Void) {
-        let path = email
-            .replacingOccurrences(of: ".", with: "_")
-            .replacingOccurrences(of: "@", with: "_")
-        guard let pngData = image?.pngData() else {
-            return
-        }
+        let path = email.replacingOccurrences(of: ".", with: "_").replacingOccurrences(of: "@", with: "_")
+        guard let pngData = image?.pngData() else { return }
         container
             .reference(withPath: "profile_pictures/\(path)/photo.png")
             .putData(pngData, metadata: nil) { metadata, error in
@@ -41,11 +37,39 @@ final class StorageManager {
             }
     }
     
-    public func uploadBlogHeaderImage(image: UIImage?, completion: @escaping (Bool) -> Void) {
+    public func uploadBlogHeaderImage(
+        for email: String,
+        image: UIImage,
+        postID: String,
+        completion: @escaping (Bool) -> Void) {
         
+        let path = email.replacingOccurrences(of: ".", with: "_").replacingOccurrences(of: "@", with: "_")
+        guard let pngData = image.pngData() else { return }
+        container
+            .reference(withPath: "post_headers/\(path)/\(postID).png")
+            .putData(pngData, metadata: nil) { metadata, error in
+                guard metadata != nil, error == nil else {
+                    print("failed at storage manager")
+                    completion(false)
+                    return
+                }
+                completion(true)
+            }
     }
     
-    public func downloadUrlForPostHeader(user: User, completion: @escaping (URL?) -> Void) {
+    public func downloadUrlForPostHeader(email: String, postID: String, completion: @escaping (URL?) -> Void) {
+        let emailComponent = email
+            .replacingOccurrences(of: ".", with: "_")
+            .replacingOccurrences(of: "@", with: "_")
         
+        container
+            .reference(withPath: "post_headers/\(emailComponent)/\(postID).png")
+            .downloadURL { url, error in
+                guard error == nil else {
+                    completion(nil)
+                    return
+                }
+                completion(url)
+            }
     }
 }
