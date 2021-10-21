@@ -222,10 +222,33 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let vc = ViewPostViewController(post: posts[indexPath.row])
-        vc.navigationItem.largeTitleDisplayMode = .never
-        vc.title = "Post"
-        navigationController?.pushViewController(vc, animated: true)
+        var isOwnedByCurrentUser = false
+        if let email = UserDefaults.standard.string(forKey: "email") {
+            isOwnedByCurrentUser = email == currentEmail
+        }
+        
+        if !isOwnedByCurrentUser {
+            if InAppPurchaseManager.shared.canViewPost {
+                let vc = ViewPostViewController(
+                    post: posts[indexPath.row],
+                    isOwnedByCurrentUser: isOwnedByCurrentUser)
+                vc.navigationItem.largeTitleDisplayMode = .never
+                vc.title = "Post"
+                navigationController?.pushViewController(vc, animated: true)
+            } else {
+                let vc = PayWallViewController()
+                present(vc, animated: true, completion: nil)
+            }
+        } else {
+            let vc = ViewPostViewController(
+                post: posts[indexPath.row],
+                isOwnedByCurrentUser: isOwnedByCurrentUser)
+            vc.navigationItem.largeTitleDisplayMode = .never
+            vc.title = "Post"
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

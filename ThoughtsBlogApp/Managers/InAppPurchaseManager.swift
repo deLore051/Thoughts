@@ -12,6 +12,8 @@ import StoreKit
 final class InAppPurchaseManager {
     static let shared = InAppPurchaseManager()
     
+    private var postEligableViewDate: Date?
+    
     private init() { }
     
     func isPremium() -> Bool {
@@ -97,4 +99,29 @@ final class InAppPurchaseManager {
             }
         }
     }
+}
+
+//MARK: - Track Post Views
+
+extension InAppPurchaseManager {
+    
+    var canViewPost: Bool {
+        guard let date = postEligableViewDate else {
+            return true
+        }
+        UserDefaults.standard.setValue(0, forKey: "post_views")
+        print(Date() >= date)
+        return Date() >= date
+    }
+    
+    public func logPostViewed() {
+        let total = UserDefaults.standard.integer(forKey: "post_views")
+        UserDefaults.standard.setValue(total + 1, forKey: "post_views")
+    
+        if total < 3 {
+            let hour: TimeInterval = 3600
+            postEligableViewDate = Date().addingTimeInterval(hour * 24)
+        }
+    }
+    
 }
